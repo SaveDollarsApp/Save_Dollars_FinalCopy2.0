@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Save_Dollars_FinalCopy</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Income</string>
+    <string name="title_notifications">Expenses</string>
+    <string name="button_notifications">notButton</string>
 </resources>
