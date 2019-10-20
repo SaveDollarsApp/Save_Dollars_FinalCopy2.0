@@ -32,7 +32,7 @@ public class NotificationsFragment extends Fragment {
 //            public void onChanged(@Nullable String s) {
 //                textView.setText(s);
 //            }
-//        });
+//        });;
         final ScrollView sv = root.findViewById(R.id.scrollView2);
         final TextView input = root.findViewById(R.id.notInput);
         final LinearLayout lilay = (LinearLayout) root.findViewById(R.id.linearLayout);
