@@ -11,6 +11,9 @@ public class NotificationsViewModel extends ViewModel {
     public NotificationsViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("");
+
+
+
     }
 
     public LiveData<String> getText() {
