@@ -9,10 +9,8 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.save_dollars_finalcopy.R;
@@ -34,7 +32,7 @@ public class NotificationsFragment extends Fragment {
 //            }
 //        });;
         final ScrollView sv = root.findViewById(R.id.scrollView2);
-        final TextView input = root.findViewById(R.id.notInput);
+        final TextView input = root.findViewById(R.id.IncomeDay);
         final LinearLayout lilay = (LinearLayout) root.findViewById(R.id.linearLayout);
         Button add = root.findViewById(R.id.notButton);
         add.setOnClickListener(new View.OnClickListener() {

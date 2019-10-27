@@ -23,14 +23,16 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="32dp"
+
+
         android:text="Welcome to Expenses!"
         android:textColor="#000000"
         android:textSize="25dp"
         android:textStyle="bold"
         app:fontFamily="@font/aldrich"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,7 +47,8 @@
         android:text="Add"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExpensesYear" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -55,7 +58,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -67,7 +70,7 @@
     </ScrollView>
 
     <EditText
-        android:id="@+id/notInput"
+        android:id="@+id/IncomeDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -78,7 +81,7 @@
         app:layout_constraintTop_toTopOf="@+id/scrollView2" />
 
     <EditText
-        android:id="@+id/notInput3"
+        android:id="@+id/ExpensesWeek"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -87,10 +90,10 @@
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notInput" />
+        app:layout_constraintTop_toBottomOf="@+id/IncomeDay" />
 
     <EditText
-        android:id="@+id/notInput4"
+        android:id="@+id/ExpensesMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -99,10 +102,10 @@
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notInput3" />
+        app:layout_constraintTop_toBottomOf="@+id/ExpensesWeek" />
 
     <EditText
-        android:id="@+id/notInput6"
+        android:id="@+id/ExpensesYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -111,7 +114,7 @@
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notInput4" />
+        app:layout_constraintTop_toBottomOf="@+id/ExpensesMonth" />
 
     <TextView
         android:id="@+id/textView7"
@@ -127,7 +130,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:fontFamily="@font/aldrich"
-        app:layout_constraintEnd_toStartOf="@+id/notInput"
+        app:layout_constraintEnd_toStartOf="@+id/IncomeDay"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/scrollView2" />
 
@@ -145,7 +148,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:fontFamily="@font/aldrich"
-        app:layout_constraintEnd_toStartOf="@+id/notInput6"
+        app:layout_constraintEnd_toStartOf="@+id/ExpensesYear"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -163,7 +166,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:fontFamily="@font/aldrich"
-        app:layout_constraintEnd_toStartOf="@+id/notInput"
+        app:layout_constraintEnd_toStartOf="@+id/IncomeDay"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -179,7 +182,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:fontFamily="@font/aldrich"
-        app:layout_constraintEnd_toStartOf="@+id/notInput3"
+        app:layout_constraintEnd_toStartOf="@+id/ExpensesWeek"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
