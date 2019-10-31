@@ -33,18 +33,18 @@ public class NotificationsFragment extends Fragment {
 //                textView.setText(s);
 //            }
 //        });;
-        final ScrollView sv = root.findViewById(R.id.scrollView2);
-        final TextView input = root.findViewById(R.id.notInput);
-        final LinearLayout lilay = (LinearLayout) root.findViewById(R.id.linearLayout);
-        Button add = root.findViewById(R.id.notButton);
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                TextView tx = new TextView(input.getContext());
-                lilay.addView(tx);
-//                sv.addView(v);
-            }
-        });
+//        final ScrollView sv = root.findViewById(R.id.scrollView2);
+//        final TextView input = root.findViewById(R.id.notInput);
+//        final LinearLayout lilay = (LinearLayout) root.findViewById(R.id.linearLayout);
+//        Button add = root.findViewById(R.id.notButton);
+//        add.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                TextView tx = new TextView(input.getContext());
+//                lilay.addView(tx);
+////                sv.addView(v);
+//            }
+//        });
         return root;
     }
 }

@@ -4,4 +4,8 @@
     <string name="title_dashboard">Income</string>
     <string name="title_notifications">Expenses</string>
     <string name="button_notifications">notButton</string>
+    <string name="dailyHint">Daily</string>
+    <string name="weeklyHint">Weekly</string>
+    <string name="monthlyHint">Monthly</string>
+    <string name="yearlyHint">Yearly</string>
 </resources>
