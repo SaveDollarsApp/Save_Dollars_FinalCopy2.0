@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -16,35 +17,66 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.save_dollars_finalcopy.R;
+import com.example.save_dollars_finalcopy.ui.dashboard.DashboardViewModel;
 
 public class NotificationsFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+    private NotificationsViewModel expDayViewModel;
+    private NotificationsViewModel expWeekViewModel;
+    private NotificationsViewModel expMonthViewModel;
+    private NotificationsViewModel expYearViewModel;
 
     public View onCreateView(@NonNull final LayoutInflater inflater,
                              final ViewGroup container, final Bundle savedInstanceState) {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel.class);
+
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
-//        final TextView textView = root.findViewById(R.id.text_notifications);
-//        notificationsViewModel.getText().observe(this, new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//                textView.setText(s);
-//            }
-//        });;
-//        final ScrollView sv = root.findViewById(R.id.scrollView2);
-//        final TextView input = root.findViewById(R.id.notInput);
-//        final LinearLayout lilay = (LinearLayout) root.findViewById(R.id.linearLayout);
-//        Button add = root.findViewById(R.id.notButton);
-//        add.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                TextView tx = new TextView(input.getContext());
-//                lilay.addView(tx);
-////                sv.addView(v);
-//            }
-//        });
+
+        expDayViewModel =
+                ViewModelProviders.of(this).get(NotificationsViewModel.class);
+        final EditText day = root.findViewById(R.id.expDaily);
+
+        expDayViewModel.getText().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+//                    if(!s.equals(expDayViewModel.getText().toString())) expDayViewModel.setText(s);
+                day.setText(s);
+//                expDayViewModel.setText(s);
+            }
+        });
+//        expDayViewModel.setText(day.getText().toString());
+
+        expWeekViewModel =
+                ViewModelProviders.of(this).get(NotificationsViewModel.class);
+        final EditText week = root.findViewById(R.id.expWeekly);
+
+        expWeekViewModel.getText().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                week.setText(s);
+            }
+        });
+
+        expMonthViewModel =
+                ViewModelProviders.of(this).get(NotificationsViewModel.class);
+        final EditText month = root.findViewById(R.id.expMonthly);
+
+        expMonthViewModel.getText().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                month.setText(s);
+            }
+        });
+
+        expYearViewModel =
+                ViewModelProviders.of(this).get(NotificationsViewModel.class);
+        final EditText year = root.findViewById(R.id.expYearly);
+
+        expYearViewModel.getText().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                year.setText(s);
+            }
+        });
         return root;
     }
 }
